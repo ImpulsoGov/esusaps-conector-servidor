@@ -1,0 +1,50 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1656329164_dim_unidade_saude
+      author: Dev
+      changes:
+        - createTable:
+            tableName: dim_unidade_saude
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  defaultValueComputed: uuid_generate_v4()
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: ibge
+                  type: varchar(7)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: id_origem
+                  type: int8
+                  constraints:
+                    nullable: false
+              - column:
+                  name: cnes
+                  type: varchar(20)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: nome
+                  type: varchar(500)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: nome_filtro
+                  type: varchar(500)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: bairro_nome
+                  type: varchar(500)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: registro_valido
+                  type: BOOLEAN
+                  constraints:
+                    nullable: false

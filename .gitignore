@@ -1,0 +1,6 @@
+.DS_Store
+.gradle
+**/build/
+!src/**/build/
+.env
+.idea
