@@ -14,7 +14,7 @@ databaseChangeLog:
                     primaryKey: true
                     nullable: false
               - column:
-                  name: ibge
+                  name: ibge_origem
                   type: varchar(7)
                   constraints:
                     nullable: false
