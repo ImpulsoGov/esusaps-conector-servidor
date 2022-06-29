@@ -21,8 +21,8 @@ public class UnidadeSaudeController {
         return service.loadAll();
     }
 
-    @PostMapping("/unidade-saude")
-    public UnidadeSaude newUnidadeSaude(@RequestBody UnidadeSaude unidadeSaude) {
+    @PostMapping(path= "/unidade-saude", consumes = "application/json", produces = "application/json")
+    public boolean newUnidadeSaude(@RequestBody UnidadeSaude unidadeSaude) {
         return service.save(unidadeSaude);
     }
 

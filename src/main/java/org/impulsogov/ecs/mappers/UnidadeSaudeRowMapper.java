@@ -1,4 +1,4 @@
-package org.impulsogov.ecs.mapper;
+package org.impulsogov.ecs.mappers;
 
 import org.impulsogov.ecs.models.UnidadeSaude;
 import org.springframework.jdbc.core.RowMapper;

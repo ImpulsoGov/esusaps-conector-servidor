@@ -36,13 +36,9 @@ databaseChangeLog:
               - column:
                   name: nome_filtro
                   type: varchar(500)
-                  constraints:
-                    nullable: false
               - column:
                   name: bairro_nome
                   type: varchar(500)
-                  constraints:
-                    nullable: false
               - column:
                   name: registro_valido
                   type: BOOLEAN
